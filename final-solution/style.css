@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #c8e1f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.underline {
+    width: 5rem;
+    height: 0.25rem;
+    background-color: black;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.colorfulBand {
+  display: flex;
+  flex-direction: row;
+  height: 8px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #7622da 0%,
+    #7622da 11%,
+    #47c6eb 11%,
+    #47c6eb 29%,
+    #ed5f1f 29%,
+    #ed5f1f 60%,
+    #f59f28 60%,
+    #f59f28 75%,
+    #6b1e5b 75% 88%,
+    #45b794 88%,
+    #45b794 100%
+  );
+}
+
+.btn-container{
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap; /* to avoid overflowing */
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.filter-btn{
+    background-color: transparent;
+    border-color: blue;
+    font-size: 1rem;
+    margin: 0.5rem 0.5rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding: 0.3rem 0.7rem;
+    transition: all 0.3s linear; /* any chnage(like background-color and color in hover) to button, do it in 3 sec */
+}
+
+.filter-btn:hover{
+    background-color: blue;
+    color: white;
+}
+
+.product-container{
+    width: 100vw;
+    margin: 0 auto;
+    max-width: 1600px;
+    display: grid;
+    gap: 3rem 2rem;
+    justify-items: center;
+}
+
+.product-item{
+    display: grid; /* better with grid because it will keep the height of boxes same */
+    gap: 1rem 2rem;
+    max-width: 30rem;
+    padding: 5px;
+    border: 2px solid;
+}
+
+.product-item:hover{
+    background-color: rgb(208, 203, 203);
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.photo{
+    object-fit: fill; /* filling its own parents width and height values */
+    width: 250px;
+    border: 0.25rem solid;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+
+
